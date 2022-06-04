@@ -132,8 +132,11 @@ def main(stdscr):
         
         basinSizes.append(len(basinCoords))
 
-    basinSizes = [int(size) for size in basinSizes]
+    #code which originally calculated the answer to the puzzle, unneeded in Curses visualization
+    """ basinSizes = [int(size) for size in basinSizes]
     basinSizes.sort(reverse=True)
+    basinProd = np.prod(basinSizes[0:3])
+    print(f"The final basin product is: {basinProd}") """
 
     resizeterminal()
     displaymap(heightMap, nucY)
