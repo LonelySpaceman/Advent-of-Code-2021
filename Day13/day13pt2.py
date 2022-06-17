@@ -3,8 +3,7 @@ with open('day13_input.txt') as fileObject:
     input = fileObject.read()
 
 ## BUILD LIST OF COORDS, INSTRUCTIONS ##
-import re
-from turtle import dot #using regex
+import re #using regex
 pointCode = '(\d+),(\d+)'
 instructCode = 'fold along (\w)=(\d+)'
 
